@@ -1,0 +1,30 @@
+Pokemon TCG Offline Arena v1
+
+What is included
+- Vite source project in `src/` and config files in the project root
+- Production build in `dist/`
+
+Run the built site in Termux
+1. Install Python if needed:
+   pkg install -y python
+2. Change into the extracted project folder.
+3. Start a static server:
+   cd dist
+   python -m http.server 8080
+4. Open in your browser:
+   http://127.0.0.1:8080
+
+Run the source project in Termux
+1. Install Node.js if needed:
+   pkg install -y nodejs
+2. Change into the extracted project folder.
+3. Install dependencies:
+   npm install
+4. Start Vite:
+   npm run dev -- --host 0.0.0.0 --port 5173
+5. Open in your browser:
+   http://127.0.0.1:5173
+
+Notes
+- If 5173 is busy, choose another port such as 4173.
+- The production `dist/` build is the simplest option for Android browsers.
